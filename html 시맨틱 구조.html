@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width = device-width, initial-scale = 1.0">
+<meta http-equiv="X-UA-Compatible" content = "ie=edge">
+<title> Keat </title>
+<style>
+    div{
+        width: 700px;
+        height: auto;
+        text-align: center;
+       
+    }
+    
+    header{
+        background-color: aquamarine;
+        height: 100px;
+        border: solid 1px black;
+        margin-bottom: 10px;
+        line-height: 50px;
+    }
+
+    nav{
+        background-color: blanchedalmond ;
+        height: 50px;
+        border: solid 1px black;
+        margin-bottom: 10px;
+        line-height: 5px;
+    }
+    
+    section{
+        background-color: lightblue;
+        width: 450px;
+        height: 250px;
+        border: solid 1px black;
+        line-height: 30px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        display: inline-block;
+        
+    }
+    
+    aside{
+        background-color: pink;
+        width: 235px;
+        height: 250px;
+        border: solid 1px black;
+        line-height: 185px;
+        float: right;
+    }
+    
+    #article01{
+        background-color:aliceblue;
+        width: 350px;
+        height: 70px;
+        border: solid 1px black;
+        line-height: 30px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    
+     #article02{
+        background-color:aliceblue;
+        width: 350px;
+        height: 70px;
+        border: solid 1px black;
+        line-height: 30px;
+        margin-left: 10px;
+        margin-top: 20px;
+        
+    }
+    
+    footer{
+        background-color: beige;
+        height: 50px;
+        border: solid 1px black;
+        line-height: 4px;
+    }
+    
+    
+</style>
+</head>   
+<body>
+    
+    <h3>시맨틱 구조</h3>
+    <hr>
+    
+    <div>
+        <!-- <header> 페이지의 일부분의 머리말(헤더) 부분을 지정-->
+        <header>
+            <h1>header</h1>
+        </header>
+        
+        <!-- <nav> 페이지의 네비게이션 부분을 지정 -->
+        <nav>
+            <h1>nav</h1>
+        </nav>
+        
+        <!-- <section> 페이지의 일부분을 지정 -->
+        <section>
+            <h1>section</h1>
+            
+            <!-- <article> 여러 문단을 묶는 태그, 독립적인 콘텐츠를 정의할 때 사용 -->
+            <article id="article01">
+                <h1>article</h1>
+            </article>
+            
+            <article id="article02">
+                <h1>article</h1>
+            </article>
+            
+        </section>
+        
+        <!-- <aside> 컨텐츠나 페이지의 외곽에 위치한 요소들을 묶는 태그 -->
+        <aside>
+            <h1>aside</h1>
+        </aside>
+        
+        <!-- <footer> 페이지나 일부분의 꼬릿말(푸터) 부분을 지정 -->
+        <footer>
+            <h1>footer</h1>
+        </footer>
+    </div>
+    
+    
+    
+</body>
+</html>
