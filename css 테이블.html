@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width = device-width, initial-scale = 1.0">
+<meta http-equiv="X-UA-Compatible" content = "ie=edge">
+<title> Keat </title>
+<style>
+    
+    #table01 table, th, td{
+        border: 1px solid black;
+    }
+    
+    #table02 table, th, td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    #table03 table, th, td{
+        border: 1px solid black;
+    }
+    #table03 table{
+        width: 400px;
+        border-collapse: separate;
+        border-spacing: 10px 20px;
+    }
+    
+    #table04 table, th, td{
+        border: 1px solid black;
+    }
+    #table04 table{
+        width: 400px;
+        height: 200px;
+    }
+    #table04 th{
+        text-align: right;
+    }
+    #table04 td{
+        text-align: center;
+    }
+    #vertical1{
+        vertical-align: bottom;
+    }
+    #vertical2{
+        vertical-align: top;
+    }
+    
+    
+</style>
+</head>   
+<body>
+   <h3>CSS 테이블</h3>
+    <hr>
+    <p>border 속성</p>
+    <div id="table01">
+        <table>
+            <tr>
+                <th>테란</th>
+                <th>저그</th>
+                <th>프로토스</th>
+            </tr>
+            <tr>
+                <td>마린</td>
+                <td>저글링</td>
+                <td>질럿</td>
+            </tr>
+            <tr>
+                <td>벌쳐</td>
+                <td>뮤탈리스크</td>
+                <td>스카웃</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div id="table01_1">
+        <table>
+            <tr>
+                <th>테란</th>
+                <th>저그</th>
+                <th>프로토스</th>
+            </tr>
+            <tr>
+                <td>마린</td>
+                <td>저글링</td>
+                <td>질럿</td>
+            </tr>
+            <tr>
+                <td>벌쳐</td>
+                <td>뮤탈리스크</td>
+                <td>스카웃</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <p>border-collapse 속성</p>
+    <div id="table02">
+        <table>
+            <tr>
+                <th>테란</th>
+                <th>저그</th>
+                <th>프로토스</th>
+            </tr>
+            <tr>
+                <td>마린</td>
+                <td>저글링</td>
+                <td>질럿</td>
+            </tr>
+            <tr>
+                <td>벌쳐</td>
+                <td>뮤탈리스크</td>
+                <td>스카웃</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    
+    <p>border-spacing속성</p>
+    <div id="table03">
+        <table>
+            <tr>
+                <th>테란</th>
+                <th>저그</th>
+                <th>프로토스</th>
+            </tr>
+            <tr>
+                <td>마린</td>
+                <td>저글링</td>
+                <td>질럿</td>
+            </tr>
+            <tr>
+                <td>벌쳐</td>
+                <td>뮤탈리스크</td>
+                <td>스카웃</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    
+    <p>text-align / vertical-align 속성</p>
+    <div id="table04">
+        <table>
+            <tr>
+                <th>테란</th>
+                <th>저그</th>
+                <th>프로토스</th>
+            </tr>
+            <tr>
+                <td id="vertical1">마린</td>
+                <td>저글링</td>
+                <td id="vertical2">질럿</td>
+            </tr>
+            <tr>
+                <td>벌쳐</td>
+                <td>뮤탈리스크</td>
+                <td>스카웃</td>
+            </tr>
+        </table>
+    </div>
+    <dv>
+    </dv>
+</body>
+</html>
