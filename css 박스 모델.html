@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+    
+    #text01{
+        font-size: 200%;
+    }    
+    #text02{
+        font-size: 0.5em;
+    }
+    #text03{
+        font-size: 50px;
+    }
+    
+    #box01{
+        width: 100px;
+        height: 100px;
+        background-color: aquamarine;
+        text-align: center;
+        line-height: 95px;
+    }
+     #box02{
+        width: 200px;
+        height: 100px;
+        background-color: lightpink;
+        text-align: center;
+        line-height: 95px;
+    }
+    #box03{
+        width: 700px;
+        height: 50px;
+        background-color: bisque;
+        text-align: center;
+        line-height: 50px;
+    }
+     #box04{
+        max-width: 700px;
+        height: 50px;
+        background-color: lightskyblue;
+        text-align: center;
+        line-height: 50px;
+    }
+    #box05{
+        background-color: aquamarine;
+        width: 400px;
+        height: 400px;
+    }
+    #box05 div{
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    #box06{
+        background-color: lightgray;
+        width: 325px;
+        height: 325px;
+    }
+    #box07{
+        background-color: beige;
+        width: 250px;
+        height: 250px;
+    }
+    #box08{
+        background-color: aliceblue;
+        width: 175px;
+        height: 175px;
+    }
+    
+    #box09{
+        width: 150px;
+        height: 150px;
+        background-color: palegreen;
+        text-align: center;
+        line-height: 145px;
+    }
+    #box10{
+        width: 150px;
+        height: 150px;
+        background-color: palegreen;
+        text-align: center;
+        line-height: 145px;
+        margin: 30px 30px 30px 30px;
+    }
+    #box11{
+        width: 150px;
+        height: 150px;
+        background-color: palegreen;
+        text-align: center;
+        line-height: 145px;
+        margin-left: 400px;
+    }
+    #box12{
+        width: 150px;
+        height: 150px;
+        background-color: lightskyblue;
+    }
+    #box12 div{
+        width: 120px;
+        height: 120px;
+        background-color: cornsilk;
+    }
+    #box13{
+        box-sizing: border-box;
+        width: 150px;
+        height: 150px;
+        background-color: lightskyblue;
+        padding: 15px 0px 0px 15px
+    }
+    #box13 div{
+        width: 120px;
+        height: 120px;
+        background-color: cornsilk;
+    }
+    
+    #box14{
+        width: 500px;
+        height: 25px;
+        border: 5px solid black;
+        text-align: center;
+    }
+    #box15{
+        width: 500px;
+        height: 25px;
+        border: 5px dotted black;
+        text-align: center;
+    }
+    #box16{
+        width: 500px;
+        height: 25px;
+        border: 5px dashed black;
+        text-align: center;
+    }
+    #box17{
+        width: 500px;
+        height: 25px;
+        border: 5px double black;
+        text-align: center;
+    }
+    #box18{
+        width: 500px;
+        height: 25px;
+        border: 5px groove;
+        text-align: center;
+    }
+    #box19{
+        width: 500px;
+        height: 25px;
+        border: 5px ridge;
+        text-align: center;
+    }
+    #box20{
+        width: 500px;
+        height: 25px;
+        border: 5px inset;
+        text-align: center;
+    }
+    #box21{
+        width: 500px;
+        height: 25px;
+        border: 5px outset;
+        text-align: center;
+    }
+    
+    #outline div{
+        width: 500px;
+        height: 25px;
+        border: 3px solid black;
+        text-align: center;
+    }
+    
+    #box22{
+        outline: 5px solid orange;
+    }
+    #box23{
+        outline: 5px dotted orange;
+    }
+    #box24{
+        outline: 5px dashed orange;
+    }
+    #box25{
+        outline: 5px double orange;
+    }
+    #box26{
+        outline: 5px groove orange;
+    }
+    #box27{
+        outline: 5px ridge orange;
+    }
+    #box28{
+        outline: 5px inset orange;
+    }
+    #box29{
+        outline: 5px outset orange;
+    }
+    
+</style>
+</head>
+<body>
+
+    <h3>크기 단위</h3>
+    <hr>
+    <p>기본 글꼴 크기</p>
+    <p id="text01">글꼴의 크기를 200%</p>
+    <p id="text02">글꼴의 크기를 0.5em</p>
+    <p id="text03">글꼴의 크기를 50px</p>
+    <br>
+    
+    <h3>높이와 너비</h3>
+    <hr>
+    <div id="box01">Box1</div>
+    <br>
+    <div id="box02">Box2</div>
+    <br>
+    <div id="box03">width가 500px인 박스</div>
+    <br> 
+    <div id="box04">max-width가 500px인 박스</div>
+    <br>
+    
+    <h3>박스 모델</h3>
+    <hr>
+    <div id="box05">
+        <p></p>margin
+        <div id="box06">
+            border
+            <div id="box07">
+                pading
+                <div id="box08">
+                    content
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    
+    <!-- 
+        4가지 속성값 : top, right, bottom, left 순
+        3가지 속성값: top, right&left, bottom 순
+        2가지 속성값: top&bottom, right&left 순
+    -->
+    <h3>margin 속성</h3>
+    <hr>
+    <div id="box09">margin 적용 x</div>
+    <div id="box10">margin 30px</div>
+    <div id="box11">margin-left 400px</div>
+    <br>
+    
+    <h3>padding 속성</h3>
+    <hr>
+    <div id="box12">
+        <div>padding 적용 x</div>
+    </div>
+    <br>
+    <div id="box13">
+        <div>padding 적용 o</div>
+    </div>
+    <br>
+    
+    <h3>border 속성</h3>
+    <hr>
+    <div id="box14">solid solid solid solid solid</div>
+    <br>
+    <div id="box15">dotted dotted dotted dotted</div>
+    <br>
+    <div id="box16">dashed dashed dashed dashed</div>
+    <br>
+    <div id="box17">double double double double</div>
+    <br>
+    <div id="box18">groove groove groove groove</div>
+    <br>
+    <div id="box19">ridge ridge ridgeridge ridge</div>
+    <br>
+    <div id="box20">inset inset inset inset inset</div>
+    <br>
+    <div id="box21">outset outset outset outset</div>
+    <br>
+    
+    <h3>outline 속성</h3>
+    <hr>
+    <div id="outline">
+        <div id="box22">solid solid solid solid solid</div>
+        <br>
+        <div id="box23">dotted dotted dotted dotted</div>
+        <br>
+        <div id="box24">dashed dashed dashed dashed</div>
+        <br>
+        <div id="box25">double double double double</div>
+        <br>
+        <div id="box26">groove groove groove groove</div>
+        <br>
+        <div id="box27">ridge ridge ridgeridge ridge</div>
+        <br>
+        <div id="box28">inset inset inset inset inset</div>
+        <br>
+        <div id="box29">outset outset outset outset</div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>

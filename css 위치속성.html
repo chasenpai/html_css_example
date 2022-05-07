@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+    
+    #inline div{
+        background-color: palegreen;
+        display: inline;
+    }
+    
+    #block span{
+        background-color: lightskyblue;
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 5px;
+        text-align: center;
+        line-height: 95px;
+    }
+    
+    #inline-block div{
+        background-color: antiquewhite;
+        width: 100px;
+        height: 100px;
+        margin-right: 5px;
+        text-align: center;
+        line-height: 95px;
+        display: inline-block;
+    }
+    
+    #none {
+        width: 400px;
+        background-color:pink;
+        text-align: center;
+        box-sizing: border-box;
+
+    }
+    #none2{
+        display: none;
+    } 
+    
+    #hidden{
+        width: 400px;
+        background-color:aquamarine;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    #hidden2{
+        visibility: hidden;
+    }
+    
+    #position{
+        width: 600px;
+        height: 300px;
+        position: relative;
+    }
+    
+    #position div{
+        width: 100px;
+        height: 100px;
+        background-color: lightgray;
+        text-align: center;
+        line-height: 95px;
+        margin-bottom: 5px;
+    }
+    #static{
+        position: static;
+    }
+    #relative{
+        position: relative;
+        left: 50px;
+        top: 50px;
+    }
+   #fixed{
+        position: fixed;
+        top: 600px;
+        right: 0;
+    }
+    #absolute{
+        position: absolute;
+        top:50px;
+        right: 0px;
+    }
+    
+    .float01{
+        width: 700px;
+        height: 200px;
+        
+    }
+    .left01{
+        width: 210px;
+        height: 210px;
+        background-color:mistyrose;
+        text-align: center;
+        line-height: 205px;
+        display: inline-block;
+        float: left;
+       
+    }
+    #left02{
+        width: 125px;
+        height: 125px;
+        text-align: center;
+        line-height: 120px;
+        background-color: skyblue;
+        display: inline-block;
+        float: left;
+    }
+    #left03{
+        width: 75px;
+        height: 75px;
+        text-align: center;
+        line-height: 70px;
+        background-color:bisque;
+        display: inline-block;
+    }
+    #right01{
+        width: 125px;
+        height: 125px;
+        text-align: center;
+        line-height: 120px;
+        background-color: skyblue;
+        display: inline-block; 
+        float: right; 
+    }
+    #right02{
+        width: 75px;
+        height: 75px;
+        text-align: center;
+        line-height: 70px;
+        background-color:bisque;
+        display: inline-block;
+        float: right; 
+    }
+    
+    #margin{
+        width: 350px;
+        height: 50px;
+        text-align: center;
+        line-height: 45px;
+        background-color: darksalmon;
+        margin: auto;
+    }
+    #ab_right{
+        width: 350px;
+        height: 50px;
+        text-align: center;
+        line-height: 45px;
+        background-color: darksalmon;
+        position: absolute;
+        right: 0;
+        margin-right: 8px;
+    }
+    #fl_right{
+        width: 350px;
+        height: 50px;
+        text-align: center;
+        line-height: 45px;
+        background-color: darksalmon;
+        float: right;
+        margin: 0;
+    }
+    
+    #both{
+        width: 350px;
+        height: 50px;
+        text-align: center;
+        line-height: 45px;
+        background-color: aquamarine;
+        clear: both;
+    }
+    
+    
+    
+    
+</style>
+</head>
+<body>
+    
+    <h3>display 속성</h3>
+    <hr>
+    <p>block => inline</p>
+    <div id="inline">
+        <div>div1</div>
+        <div>div2</div>
+        <div>div3</div>
+    </div>
+    <br>
+    
+    <p>inline => block</p>
+    <div id="block">
+        <span>span1</span>
+        <span>span2</span>
+        <span>span3</span>
+    </div>
+    <br>
+    
+    <p>inline-block</p>
+    <div id="inline-block">
+        <div>div1</div>
+        <div>div2</div>
+        <div>div3</div>
+    </div>
+    <br>
+    
+    <p>none</p>
+    <div id="none">
+            <p>display: block</p>
+            <p id="none2">display: none</p>
+    </div>
+    <br>
+    
+    <p>hidden</p>
+    <div id="hidden">
+            <p>visible: visible</p>
+            <p id="hidden2">visible: hidden</p>
+    </div>
+    <br>
+    
+    <h3>position 속성</h3>
+    <hr>
+    <div id="position">
+        <div id="static">static</div>
+        <div id="relative">relative</div>
+        <div id="fixed">fixed</div>
+        <div id="absolute">absolute</div>
+    </div>
+    <br>
+    
+    <h3>float 속성</h3>
+    <hr>
+    <p>flaot: left</p>
+    <div class="float01">
+        <div class="left01">div1</div>
+        <div id="left02">div2</div>
+        <div id="left03">div3</div>
+    </div>
+    <br>
+    <p>float: right</p>
+    <div class="float01">
+        <div class="left01">div1</div>
+        <div id="right01">div2</div>
+        <div id="right02">div3</div>
+        <div id="both">clear: both</div>
+    </div>
+    <br>
+    <br>
+    <br>
+   
+    <h3>정렬</h3>
+    <hr>
+    <div id="margin">margin: auto</div>
+    <br>
+    <br>
+    <div id="ab_right">position: absolute right: 0</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="fl_right">float: right</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+</body>
+</html>
