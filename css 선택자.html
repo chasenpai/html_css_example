@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width = device-width, initial-scale = 1.0">
+<meta http-equiv="X-UA-Compatible" content = "ie=edge">
+<title> Keat </title>
+<style>
+    
+    p{
+        background-color: red;
+        width: 500px;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+    }
+    #id{
+        background-color: yellow;
+        color: blue;
+    }
+    .class{
+        background-color: green;
+    }
+    h2, h4, h5{
+        background-color: blue;
+        width: 500px;
+        color: white;
+        text-align: center;
+    }
+    
+    #sel01 p{
+        background-color: lightblue;
+        width: 500px;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+    }
+     #sel01 > p{
+        background-color: aquamarine;
+        width: 500px;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+    }
+    [title] {
+        background-color: bisque;
+        width: 500px;
+        text-align: center;
+        font-weight: bold;
+        color: black;
+    }
+    [title="red"] {
+        color: red;
+    }
+    [type="text"]{
+        width: 493px;
+        text-align: center;
+        border: 2px solid red;
+        margin-bottom: 14px
+    }
+    [type="password"]{
+        width: 493px;
+        text-align: center;
+        border: 2px solid red;
+    }
+   
+    p:first-child{
+        background-color: lightgray;
+        color: black;
+    }
+    
+</style>
+</head>
+<body>
+     
+    <h3>선택자</h3>
+    <hr>
+    <p>HTML 요소 선택자</p>
+    <p id="id">id 선택자</p>
+    <p class="class">class 선택자</p>
+
+    <h2>그룹 선택자</h2>
+    <h4>그룹 선택자</h4>
+    <h5>그룹 선택자</h5>
+    <br>
+    
+    <h3>결합 선택자</h3>
+    <hr>
+    <div id="sel01">
+        <div>
+            <p>자손 선택자</p>
+        </div>
+        <p>자식 선택자</p>
+    </div>
+    <br>
+    
+    <h3>속성 선택자</h3>
+    <hr>
+    <p title="">[속성이름] 선택자</p>
+    <p title="red">[속성이름="속성값"] 선택자</p>
+    <input type="text" value="속성 선택자 활용"><br>
+    <input type="password" value="속성 선택자 활용">
+    <br>
+    <br>
+    
+    <h3>가상 선택자</h3>
+    <hr>
+    <div>
+        <p>first-child</p>
+        <p>nth-child</p>
+        <p>nth-child</p>
+        <p>last-child</p>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>
